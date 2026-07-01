@@ -1,0 +1,27 @@
+# Local configuration (use application/config.example.php)
+application/config.php
+
+# Runtime uploads
+tmp/*
+!tmp/.htaccess
+!tmp/avatar/.htaccess
+!tmp/tickets_img/.htaccess
+
+# Local development environment
+.osp/
+
+# Machine-specific IDE settings
+.vscode/settings.json
+
+# Install large binaries (hosted on CDN)
+install/l/docker_images/
+install/l/g/
+install/mods/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
