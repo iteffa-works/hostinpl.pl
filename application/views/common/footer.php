@@ -8,7 +8,7 @@ Developed by Samir Shelenko and Alexander Zemlyanoy  (https://vk.com/id00v / htt
 	<div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
 		<div class="text-dark order-2 order-md-1">
 			<span class="text-muted font-weight-bold mr-2">2020©</span>
-			<a href="https://hostinpl.ru" target="_blank" class="text-dark-75 text-hover-primary">HOSTINPL 5.6</a>
+			<a href="https://flowaxy.com" target="_blank" class="text-dark-75 text-hover-primary">HOSTINPL 5.6</a>
 		</div>
 		<div class="nav nav-dark order-1 order-md-2">
 			<a href="/contacts" class="nav-link pr-3 pl-0">Контакты</a>

@@ -65,22 +65,22 @@ $game_settings = array(
 ),
 'node_modules' => array(
 	'ragemp' => array(
-		'base64-js' => array('modulepath' => 'base64-js', 'module_name' => 'base64-js', 'moduleurl' => 'http://mc.hostinpl.ru/files/ragemp/node_modules/', 'modulearchive' => 'base64-js.zip'),
-		'bignumber.js' => array('modulepath' => 'bignumber.js', 'module_name' => 'bignumber.js', 'moduleurl' => 'http://mc.hostinpl.ru/files/ragemp/node_modules/', 'modulearchive' => 'bignumber.js.zip'),
-		'charenc' => array('modulepath' => 'charenc', 'module_name' => 'charenc', 'moduleurl' => 'http://mc.hostinpl.ru/files/ragemp/node_modules/', 'modulearchive' => 'charenc.zip'),
-		'core-util-is' => array('modulepath' => 'core-util-is', 'module_name' => 'core-util-is', 'moduleurl' => 'http://mc.hostinpl.ru/files/ragemp/node_modules/', 'modulearchive' => 'core-util-is.zip'),
-		'crypt' => array('modulepath' => 'crypt', 'module_name' => 'crypt', 'moduleurl' => 'http://mc.hostinpl.ru/files/ragemp/node_modules/', 'modulearchive' => 'crypt.zip'),
-		'ieee754' => array('modulepath' => 'ieee754', 'module_name' => 'ieee754', 'moduleurl' => 'http://mc.hostinpl.ru/files/ragemp/node_modules/', 'modulearchive' => 'ieee754.zip'),
-		'inherits' => array('modulepath' => 'inherits', 'module_name' => 'inherits', 'moduleurl' => 'http://mc.hostinpl.ru/files/ragemp/node_modules/', 'modulearchive' => 'inherits.zip'),
-		'isarray' => array('modulepath' => 'isarray', 'module_name' => 'isarray', 'moduleurl' => 'http://mc.hostinpl.ru/files/ragemp/node_modules/', 'modulearchive' => 'isarray.zip'),
-		'lodash' => array('modulepath' => 'lodash', 'module_name' => 'isarray', 'moduleurl' => 'http://mc.hostinpl.ru/files/ragemp/node_modules/', 'modulearchive' => 'lodash.zip'),
-		'md5' => array('modulepath' => 'md5', 'module_name' => 'md5', 'moduleurl' => 'http://mc.hostinpl.ru/files/ragemp/node_modules/', 'modulearchive' => 'md5.zip'),
-		'mysql' => array('modulepath' => 'mysql', 'module_name' => 'mysql', 'moduleurl' => 'http://mc.hostinpl.ru/files/ragemp/node_modules/', 'modulearchive' => 'mysql.zip'),
-		'process-nextick-args' => array('modulepath' => 'process-nextick-args', 'module_name' => 'process-nextick-args', 'moduleurl' => 'http://mc.hostinpl.ru/files/ragemp/node_modules/', 'modulearchive' => 'process-nextick-args.zip'),
-		'readable-stream' => array('modulepath' => 'readable-stream', 'module_name' => 'readable-stream', 'moduleurl' => 'http://mc.hostinpl.ru/files/ragemp/node_modules/', 'modulearchive' => 'readable-stream.zip'),
-		'safe-buffer' => array('modulepath' => 'safe-buffer', 'module_name' => 'safe-buffer', 'moduleurl' => 'http://mc.hostinpl.ru/files/ragemp/node_modules/', 'modulearchive' => 'safe-buffer.zip'),
-		'sqlstring' => array('modulepath' => 'sqlstring', 'module_name' => 'sqlstring', 'moduleurl' => 'http://mc.hostinpl.ru/files/ragemp/node_modules/', 'modulearchive' => 'sqlstring.zip'),
-		'util-deprecate' => array('modulepath' => 'util-deprecate', 'module_name' => 'util-deprecate', 'moduleurl' => 'http://mc.hostinpl.ru/files/ragemp/node_modules/', 'modulearchive' => 'util-deprecate.zip')
+		'base64-js' => array('modulepath' => 'base64-js', 'module_name' => 'base64-js', 'moduleurl' => 'https://code.flowaxy.com/hostpanel/files/ragemp/node_modules/', 'modulearchive' => 'base64-js.zip'),
+		'bignumber.js' => array('modulepath' => 'bignumber.js', 'module_name' => 'bignumber.js', 'moduleurl' => 'https://code.flowaxy.com/hostpanel/files/ragemp/node_modules/', 'modulearchive' => 'bignumber.js.zip'),
+		'charenc' => array('modulepath' => 'charenc', 'module_name' => 'charenc', 'moduleurl' => 'https://code.flowaxy.com/hostpanel/files/ragemp/node_modules/', 'modulearchive' => 'charenc.zip'),
+		'core-util-is' => array('modulepath' => 'core-util-is', 'module_name' => 'core-util-is', 'moduleurl' => 'https://code.flowaxy.com/hostpanel/files/ragemp/node_modules/', 'modulearchive' => 'core-util-is.zip'),
+		'crypt' => array('modulepath' => 'crypt', 'module_name' => 'crypt', 'moduleurl' => 'https://code.flowaxy.com/hostpanel/files/ragemp/node_modules/', 'modulearchive' => 'crypt.zip'),
+		'ieee754' => array('modulepath' => 'ieee754', 'module_name' => 'ieee754', 'moduleurl' => 'https://code.flowaxy.com/hostpanel/files/ragemp/node_modules/', 'modulearchive' => 'ieee754.zip'),
+		'inherits' => array('modulepath' => 'inherits', 'module_name' => 'inherits', 'moduleurl' => 'https://code.flowaxy.com/hostpanel/files/ragemp/node_modules/', 'modulearchive' => 'inherits.zip'),
+		'isarray' => array('modulepath' => 'isarray', 'module_name' => 'isarray', 'moduleurl' => 'https://code.flowaxy.com/hostpanel/files/ragemp/node_modules/', 'modulearchive' => 'isarray.zip'),
+		'lodash' => array('modulepath' => 'lodash', 'module_name' => 'isarray', 'moduleurl' => 'https://code.flowaxy.com/hostpanel/files/ragemp/node_modules/', 'modulearchive' => 'lodash.zip'),
+		'md5' => array('modulepath' => 'md5', 'module_name' => 'md5', 'moduleurl' => 'https://code.flowaxy.com/hostpanel/files/ragemp/node_modules/', 'modulearchive' => 'md5.zip'),
+		'mysql' => array('modulepath' => 'mysql', 'module_name' => 'mysql', 'moduleurl' => 'https://code.flowaxy.com/hostpanel/files/ragemp/node_modules/', 'modulearchive' => 'mysql.zip'),
+		'process-nextick-args' => array('modulepath' => 'process-nextick-args', 'module_name' => 'process-nextick-args', 'moduleurl' => 'https://code.flowaxy.com/hostpanel/files/ragemp/node_modules/', 'modulearchive' => 'process-nextick-args.zip'),
+		'readable-stream' => array('modulepath' => 'readable-stream', 'module_name' => 'readable-stream', 'moduleurl' => 'https://code.flowaxy.com/hostpanel/files/ragemp/node_modules/', 'modulearchive' => 'readable-stream.zip'),
+		'safe-buffer' => array('modulepath' => 'safe-buffer', 'module_name' => 'safe-buffer', 'moduleurl' => 'https://code.flowaxy.com/hostpanel/files/ragemp/node_modules/', 'modulearchive' => 'safe-buffer.zip'),
+		'sqlstring' => array('modulepath' => 'sqlstring', 'module_name' => 'sqlstring', 'moduleurl' => 'https://code.flowaxy.com/hostpanel/files/ragemp/node_modules/', 'modulearchive' => 'sqlstring.zip'),
+		'util-deprecate' => array('modulepath' => 'util-deprecate', 'module_name' => 'util-deprecate', 'moduleurl' => 'https://code.flowaxy.com/hostpanel/files/ragemp/node_modules/', 'modulearchive' => 'util-deprecate.zip')
 	)
 )
 );

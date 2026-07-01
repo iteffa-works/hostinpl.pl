@@ -127,7 +127,7 @@ Developed by Samir Shelenko and Alexander Zemlyanoy  (https://vk.com/id00v / htt
                <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between">
                   <div class="font-size-h6 font-weight-bolder order-2 order-md-1 py-2 py-md-0">
                      <span class="text-muted font-weight-bold mr-2">2020©</span>
-                     <a href="https://hostinpl.ru" target="_blank" class="text-dark-50 text-hover-primary"><?php echo $description ?></a>
+                     <a href="https://github.com/iteffa-works/hostinpl.pl" target="_blank" class="text-dark-50 text-hover-primary"><?php echo $description ?></a>
                   </div>
                   <div class="font-size-h5 font-weight-bolder order-1 order-md-2 py-2 py-md-0">
                      <a href="javascript:;" data-toggle="modal" data-target="#hostin_supports" class="text-primary">Обратная связь</a>
