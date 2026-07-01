@@ -1,0 +1,7 @@
+AddDefaultCharset utf-8
+php_value memory_limit 10000M
+Options -Indexes
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?action=$1 [L,QSA]

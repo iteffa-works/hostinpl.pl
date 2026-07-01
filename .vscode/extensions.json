@@ -1,0 +1,17 @@
+{
+    "recommendations": [
+      "ms-vscode.theme-materialkit",
+      "pkief.material-icon-theme",
+      "bmewburn.vscode-intelephense-client",
+      "xdebug.php-debug",
+      "formulahendry.auto-rename-tag",
+      "ecmel.vscode-html-css",
+      "pranaygp.vscode-css-peek"
+    ],
+    "unwantedRecommendations": [
+      "devsense.phptools-vscode",
+      "devsense.composer-php-vscode",
+      "devsense.profiler-php-vscode",
+      "zobo.php-intellisense"
+    ]
+  }
