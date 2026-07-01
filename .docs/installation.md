@@ -69,6 +69,9 @@ After reboot, run the installer again.
 | Item | Location |
 |------|----------|
 | Panel URL | `http://YOUR_DOMAIN/` |
+| Panel login | `/account/login` |
+| Default admin (from SQL) | `flowaxy.dev@gmail.com` / `1234567890` — **change after install** |
+| Admin area | `/admin` |
 | phpMyAdmin (panel) | `http://YOUR_DOMAIN/RANDOM_PATH` (shown after install) |
 | phpMyAdmin (location) | `http://SERVER_IP:8080/phpmyadmin` |
 | DB name | `hostin` |

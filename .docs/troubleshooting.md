@@ -30,6 +30,12 @@ Common HOSTINPL installation and runtime issues.
 - Verify `short_open_tag=On` in PHP ini
 - Confirm `application/config.php` exists with correct DB credentials
 
+### Cannot log in after fresh import
+
+- Default admin from `hostinpl5_6.sql`: `flowaxy.dev@gmail.com` / `1234567890`
+- Access level must be `3` for full admin (`/admin`)
+- Re-import SQL or update `users` row if the insert was skipped
+
 ### Database connection failed
 
 - DB name must be `hostin` (installer default)

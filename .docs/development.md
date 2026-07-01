@@ -11,6 +11,19 @@
 
 OSP: copy [.osp/project.ini.example](../.osp/project.ini.example) to `.osp/project.ini` and adjust domain. Use **PHP 8.1** in OSPanel (legacy code is not PHP 8.2-clean). Copy `.user.ini` from repo root (or create it) to hide deprecations locally without changing engine code.
 
+## Default administrator (fresh SQL import)
+
+After importing `hostinpl5_6.sql`:
+
+| Field | Value |
+|-------|-------|
+| URL | `/account/login` |
+| Email | `flowaxy.dev@gmail.com` |
+| Password | `1234567890` |
+| Access | Level 3 (administration) |
+
+Change the password immediately on any public server.
+
 ## Code conventions
 
 - **PHP** with short tags allowed in views (`<?` / `<?php`)

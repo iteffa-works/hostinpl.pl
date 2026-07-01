@@ -417,6 +417,14 @@ CREATE TABLE `users` (
   `user_last_date` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Дамп данных таблицы `users`
+-- Администратор по умолчанию (user_access_level 3).
+-- Логин: flowaxy.dev@gmail.com  Пароль: 1234567890 — смените на production!
+--
+
+INSERT INTO `users` (`user_id`, `user_email`, `user_new_email`, `user_password`, `user_firstname`, `user_lastname`, `user_status`, `user_balance`, `user_restore_key`, `user_access_level`, `user_date_reg`, `user_img`, `user_online_date`, `user_promo_date`, `user_activate`, `key_activate`, `ref`, `rmoney`, `bonuses`, `user_vk_id`, `test_server`, `user_promised_pay`, `user_last_date`) VALUES (1, 'flowaxy.dev@gmail.com', NULL, 'e807f1fcf82d132f9bb018ca6738a19f', 'User', 'Demo', 1, 0.00, NULL, 3, '2026-07-01 23:30:55', 'application/public/img/user.png', '1782942206', NULL, 1, '203e92f4370d1a3190a5cbeeca207f7f', 0, 0.00, 0.00, NULL, '2', 0, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -800,7 +808,7 @@ ALTER TABLE `tickets_messages`
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT для таблицы `users_auth`

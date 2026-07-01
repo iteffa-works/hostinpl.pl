@@ -34,7 +34,8 @@ See [payments.md](payments.md) for gateway URL configuration.
 
 ## Database
 
-- Installer creates `admin` user with random password
+- Installer creates MariaDB user `admin` with random password
+- `hostinpl5_6.sql` includes default panel admin: `flowaxy.dev@gmail.com` / `1234567890` — **change immediately on production**
 - Production database name: `hostin`
 - Do not expose MariaDB port publicly on panel servers
 
