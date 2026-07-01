@@ -11,7 +11,7 @@ The panel itself is cloned from GitHub — it is **not** part of the CDN package
 
 ## CDN directory layout
 
-Upload the contents of the `install/` folder (except large binaries if using Git LFS) to:
+Upload the full `install/` folder to your CDN mirror (same layout as in the repository).
 
 ```
 https://code.flowaxy.com/hostpanel/
@@ -70,5 +70,10 @@ Cloned at install time into `/var/www/`. Excluded from sync: `.git`, `install/`,
 
 ## Large files and Git
 
-`install/.gitignore` excludes `l/docker_images/`, `l/g/` from git.  
-Use Git LFS, a release asset, or upload binaries directly to the CDN.
+Files over GitHub’s 100 MB limit use **Git LFS** (see `.gitattributes`):
+
+- `install/l/docker_images/debian_bullseye_hostinpl_02062024.tar`
+- `install/l/g/cs.zip`
+- `install/l/g/mine_and_mcpe.zip`
+
+Clone with LFS: `git lfs install && git clone …`

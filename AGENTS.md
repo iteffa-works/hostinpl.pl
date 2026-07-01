@@ -61,7 +61,6 @@ install/install56_deb.sh         # Production installer
 - `application/config.php` (secrets)
 - `.osp/` (local dev)
 - `.vscode/settings.json` (machine-specific)
-- `install/l/g/`, `install/l/docker_images/` (large binaries)
 - `tmp/*` uploads
 
 ## Coding rules

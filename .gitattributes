@@ -1,2 +1,4 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Git LFS — install payloads over GitHub 100 MB limit
+install/l/docker_images/** filter=lfs diff=lfs merge=lfs -text
+install/l/g/cs.zip filter=lfs diff=lfs merge=lfs -text
+install/l/g/mine_and_mcpe.zip filter=lfs diff=lfs merge=lfs -text

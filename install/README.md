@@ -9,10 +9,10 @@ Debian installer and CDN payloads for HOSTINPL 5.6.
 | `install56_deb.sh` | Yes | Yes (mirror) |
 | `p/` (panel configs) | Yes | Yes |
 | `l/config_nginx.txt`, `l/php.ini` | Yes | Yes |
-| `l/docker_images/` (~924 MB) | No | Yes |
-| `l/g/` game archives (~2.6 GB) | No | Yes |
+| `l/docker_images/` (~924 MB) | Yes (Git LFS) | Yes |
+| `l/g/` game archives (~2.6 GB) | Yes (Git LFS for >100 MB) | Yes |
 | `files/ragemp/node_modules/` (~1 MB) | Yes | Yes |
-| `mods/` (11 game mods, ~250 MB) | No | Yes |
+| `mods/` (11 game mods, ~250 MB) | Yes | Yes |
 | `no.png` | Yes | Yes |
 
 CDN base URL: **https://code.flowaxy.com/hostpanel**

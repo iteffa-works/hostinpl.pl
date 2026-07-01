@@ -7,16 +7,12 @@ tmp/*
 !tmp/avatar/.htaccess
 !tmp/tickets_img/.htaccess
 
-# Local development environment
-.osp/
+# Local development environment (keep example template)
+.osp/*
+!.osp/project.ini.example
 
 # Machine-specific IDE settings
 .vscode/settings.json
-
-# Install large binaries (hosted on CDN)
-install/l/docker_images/
-install/l/g/
-install/mods/
 
 # OS
 .DS_Store
