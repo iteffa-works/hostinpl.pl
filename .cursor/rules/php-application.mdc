@@ -1,0 +1,34 @@
+---
+description: PHP application layer conventions (controllers, models, views)
+globs: application/**/*.php
+alwaysApply: false
+---
+
+# Application layer
+
+## Controllers
+
+- Path mirrors URL: `application/controllers/servers/control.php`
+- Extend `Controller`, access registry: `$this->registry`, `$this->load`, `$this->user`
+- Load models: `$this->load->model('servers')` then `$this->serversModel`
+
+## Models
+
+- File `application/models/foo.php` → class `fooModel extends Model`
+- Use `$this->db` for queries (wrapper in `engine/database/mysql.php`)
+
+## Views
+
+- Return HTML via `$this->load->view('path', $vars)`
+- Common layout: `common/header`, `common/footer`, `common/admheader`
+- Short PHP tags may appear in views
+
+## Config
+
+- Settings in `application/config.example.php` (tracked template)
+- Runtime: `application/config.php` (gitignored, created by installer or `cp config.example.php`)
+- Payment toggles: `'freekassa' => '1'` etc.
+
+## Payments
+
+Result webhooks: `application/controllers/result/{gateway}.php`

@@ -1,0 +1,30 @@
+---
+description: Documentation and GitHub release standards
+globs: "**/*.md"
+alwaysApply: false
+---
+
+# Documentation standards
+
+## Language
+
+- User-facing docs: **English**
+- UI strings in code: Russian (unless i18n task)
+
+## Maintainer
+
+Always credit **FLOWAXY DIGITAL STUDIO** as current maintainer.  
+Original authors: HOSTINPL (HOSTING-RUS), 2020.
+
+## Required links in install/deploy docs
+
+- CDN: `https://code.flowaxy.com/hostpanel`
+- Repo: `https://github.com/iteffa-works/hostinpl.pl`
+- Donate: `https://flowaxy.com/donate`
+
+## When editing docs
+
+- Update `CHANGELOG.md` Unreleased for notable changes
+- Cross-link `.docs/README.md` index
+- Mention large binaries are CDN-only (not in Git)
+- Use `config.example.php` not `config.php` in examples

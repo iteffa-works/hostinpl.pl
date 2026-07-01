@@ -1,0 +1,35 @@
+---
+description: Debian installer and CDN asset layout
+globs: install/**
+alwaysApply: false
+---
+
+# Install package
+
+## Files
+
+- `install56_deb.sh` — main installer (panel / location / games menu)
+- `p/` — panel configs (Apache, php.ini, phpMyAdmin)
+- `l/` — location configs (Nginx, php.ini, Docker image, game zips)
+
+## URLs
+
+```bash
+INSTALL_BASE_URL="https://code.flowaxy.com/hostpanel"
+PANEL_REPO_URL="https://github.com/iteffa-works/hostinpl.pl"
+```
+
+## Key functions in installer
+
+- `fetch_install_file` — wget with error check
+- `install_panel_from_repo` — git clone + rsync to `/var/www/`
+- `configure_panel_config` — sed on `application/config.php`
+- `import_panel_database` — `hostinpl5_6.sql` → DB `hostin`
+- `load_docker_image` — Docker tar from CDN
+
+## When editing
+
+- Keep `INSTALL_BASE_URL` single source for CDN paths
+- Panel is **not** in `panel.zip` — GitHub clone only
+- Large binaries gitignored: `l/docker_images/`, `l/g/`
+- Docs: `.docs/hosting-assets.md`, `.docs/installation.md`, `install/README.md`

@@ -1,0 +1,37 @@
+---
+description: HOSTINPL core project context for all AI sessions
+alwaysApply: true
+---
+
+# HOSTINPL 5.6
+
+Custom PHP MVC hosting panel — **not** Laravel/Symfony.
+
+**Maintainer:** FLOWAXY DIGITAL STUDIO (flowaxy.com) — free product  
+**Original:** HOSTINPL / Samir Shelenko, Alexander Zemlyanoy (2020)
+
+## Structure
+
+- `index.php` → `Action` → `application/controllers/`
+- Models: `application/models/{name}.php` → `{name}Model`
+- Config template: `application/config.example.php` (commit this)
+- Config runtime: `application/config.php` (gitignored)
+- DB prod name: `hostin`
+- Server logic: `application/models/servers.php`
+
+## Deploy
+
+- Installer: `install/install56_deb.sh`
+- CDN: `https://code.flowaxy.com/hostpanel`
+- Panel: `https://github.com/iteffa-works/hostinpl.pl`
+
+## Docs & community
+
+- `.docs/` · `AGENTS.md` · `CONTRIBUTING.md` · `CHANGELOG.md` · `ROADMAP.md`
+
+## Rules
+
+- Minimal diffs; legacy PHP style
+- No Composer for core; Registry pattern
+- Never commit `config.php` or payment secrets
+- Branding: flowaxy.com / GitHub — not hostinpl.ru

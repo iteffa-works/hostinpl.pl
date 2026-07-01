@@ -1,0 +1,31 @@
+---
+description: Engine core and libraries
+globs: engine/**/*.php
+alwaysApply: false
+---
+
+# Engine layer
+
+## Core classes (`engine/main/`)
+
+| Class | Purpose |
+|-------|---------|
+| `Registry` | Service container (`$registry->db`, `$registry->user`) |
+| `Load` | Load views, models, libraries |
+| `Action` | Parse URI, dispatch controller |
+| `DB` | Database abstraction |
+| `Config` | Loads `application/config.php` |
+
+## Libraries (`engine/libs/`)
+
+- `ssh2.php`, `sftp.php` — remote location communication
+- `query.php` + drivers — game server query (SAMP, MTA, Valve, RAGE:MP, Minecraft)
+- `mail.php`, `pagination.php`, `validate.php`
+
+## Games (`engine/games/game_settings.php`)
+
+Defines MCPE cores, RAGE:MP node module URLs, binary paths. Large static array.
+
+## FTP (`engine/engine_ftp/`)
+
+elFinder-based file manager for server FTP access. Do not refactor lightly.
