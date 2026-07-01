@@ -11,7 +11,10 @@ class indexController extends Controller {
 		$this->data['public'] = $this->config->public;
 		
 		if(!$this->user->isLogged()) {
-			$this->response->redirect($this->config->url . 'account/login');
+			$this->data['title'] = $this->config->title;
+			$this->data['description'] = $this->config->description;
+			$this->data['logo'] = $this->config->logo;
+			return $this->load->view('main/landing', $this->data);
 		}
 		if($this->user->getAccessLevel() < 0) {
 			$this->session->data['error'] = "У вас нет доступа к данному разделу!";
