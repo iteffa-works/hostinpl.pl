@@ -9,7 +9,7 @@
 5. Edit `application/config.php` for local DB and URL
 6. Enable `short_open_tag=On` in `php.ini`
 
-OSP: copy [.osp/project.ini.example](../.osp/project.ini.example) to `.osp/project.ini` and adjust domain.
+OSP: copy [.osp/project.ini.example](../.osp/project.ini.example) to `.osp/project.ini` and adjust domain. Use **PHP 8.1** in OSPanel (legacy code is not PHP 8.2-clean). Copy `.user.ini` from repo root (or create it) to hide deprecations locally without changing engine code.
 
 ## Code conventions
 

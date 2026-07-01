@@ -21,3 +21,6 @@ desktop.ini
 
 # Logs
 *.log
+
+# Local PHP overrides (OSPanel)
+.user.ini
