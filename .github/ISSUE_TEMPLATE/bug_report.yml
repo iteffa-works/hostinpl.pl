@@ -1,0 +1,68 @@
+name: Bug Report
+description: Report a bug in HOSTINPL panel or installer
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Check [troubleshooting](https://github.com/iteffa-works/hostinpl.pl/blob/main/.docs/troubleshooting.md) first.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Panel (web UI)
+        - Installer (install56_deb.sh)
+        - Game location
+        - Payments
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: HOSTINPL version
+      placeholder: "5.6"
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: "Debian 12, PHP 8.2, panel only"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Apache/Nginx, PHP, cron output (redact secrets)
