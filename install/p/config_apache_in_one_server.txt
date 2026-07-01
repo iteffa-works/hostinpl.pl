@@ -1,0 +1,16 @@
+<VirtualHost *:80>
+	ServerAdmin hosting-rus@mail.ru
+	ServerName domain.ru
+	DocumentRoot /var/www/
+	<Directory /var/www/>
+		Options Indexes FollowSymLinks
+		AllowOverride All
+		Require all granted
+	</Directory>
+	<Directory /var/www/tmp/>
+		Options -ExecCGI -Indexes
+		php_flag engine off
+	</Directory>
+	ErrorLog /var/log/apache2/hostinpl_error.log
+	CustomLog /var/log/apache2/hostinpl_custom.log combined
+</VirtualHost>

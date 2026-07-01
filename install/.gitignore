@@ -1,0 +1,4 @@
+# Large binaries — host separately, do not commit to git
+l/docker_images/
+l/g/
+mods/

@@ -1,0 +1,48 @@
+HOSTINPL 5.6 — CDN upload package
+=================================
+
+Upload the CONTENTS of this install/ folder to your web server so they are
+available at:
+
+  https://code.flowaxy.com/hostpanel/
+
+Expected public layout:
+
+  hostpanel/
+  ├── install56_deb.sh
+  ├── no.png
+  ├── mods/
+  │   └── *.tar (11 SAMP/CRMP game mods)
+  ├── p/
+  │   ├── config_pma.txt
+  │   ├── config_apache.txt
+  │   ├── config_apache_in_one_server.txt
+  │   └── php.ini
+  ├── l/
+  │   ├── php.ini
+  │   ├── config_nginx.txt
+  │   ├── docker_images/
+  │   │   └── debian_bullseye_hostinpl_02062024.tar
+  │   └── g/
+  │       ├── samp.zip, crmp.zip, crmp037.zip, unit.zip, mta.zip
+  │       ├── mine_and_mcpe.zip, cs.zip, ragemp.zip
+  │       └── css.zip, csgo.zip
+  └── files/
+      └── ragemp/
+          └── node_modules/
+              └── *.zip (16 RAGE:MP Node modules)
+
+Do NOT upload:
+  - .gitignore, README.md, UPLOAD.txt (local docs only)
+  - panel/ (removed — panel is cloned from GitHub at install time)
+
+After upload, verify:
+
+  curl -I https://code.flowaxy.com/hostpanel/install56_deb.sh
+  curl -I https://code.flowaxy.com/hostpanel/l/g/samp.zip
+  curl -I https://code.flowaxy.com/hostpanel/mods/arizona.tar
+  curl -I https://code.flowaxy.com/hostpanel/no.png
+
+Total size on disk: ~3.5 GB (mostly l/g/cs.zip and docker image).
+
+Maintained by FLOWAXY DIGITAL STUDIO — https://flowaxy.com
