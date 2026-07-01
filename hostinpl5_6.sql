@@ -269,17 +269,17 @@ CREATE TABLE `servers_mods` (
 --
 
 INSERT INTO `servers_mods` (`game_id`, `mod_url`, `mod_name`, `mod_status`, `mod_arch`, `mod_textx`, `mod_img`, `mod_price`, `mod_set`, `mod_id`) VALUES
-(1, 'http://mc.hostinpl.ru/mods/arizona.tar', 'Arizona RP', 1, 'arizona.tar', 'Игровой мод Arizona RP, для SAMP 0.3.7', 'http://mc.hostinpl.ru/no.png', '0', 0, 1),
-(1, 'http://mc.hostinpl.ru/mods/diamond-rp.tar', 'Diamond RP', 1, 'diamond-rp.tar', 'Игровой мод Diamond RP, для SAMP 0.3.7', 'http://mc.hostinpl.ru/no.png', '0', 0, 2),
-(1, 'http://mc.hostinpl.ru/mods/evolverp.tar', 'Evolve RP', 1, 'evolverp.tar', 'Игровой мод Evolve RP, для SAMP 0.3.7', 'http://mc.hostinpl.ru/no.png', '0', 0, 3),
-(1, 'http://mc.hostinpl.ru/mods/heavilyrp.tar', 'Heavily RP', 1, 'heavilyrp.tar', 'Игровой мод Heavily RP, для SAMP 0.3.7', 'http://mc.hostinpl.ru/no.png', '0', 0, 4),
-(1, 'http://mc.hostinpl.ru/mods/samp-mobile.tar', 'SAMP MOBILE', 1, 'samp-mobile.tar', 'Игровой мод SAMP MOBILE, для SAMP 0.3.7', 'http://mc.hostinpl.ru/no.png', '0', 0, 5),
-(1, 'http://mc.hostinpl.ru/mods/samprp.tar', 'Samp RP', 1, 'samprp.tar', 'Игровой мод Samp RP, для SAMP 0.3.7', 'http://mc.hostinpl.ru/no.png', '0', 0, 6),
-(2, 'http://mc.hostinpl.ru/mods/capsrp.tar', 'Caps RP', 1, 'capsrp.tar', 'Игровой мод Caps RP, для CRMP 0.3e и CRMP 0.3.7', 'http://mc.hostinpl.ru/no.png', '0', 0, 7),
-(2, 'http://mc.hostinpl.ru/mods/countyrp.tar', 'County RP', 1, 'countyrp.tar', 'Игровой мод County RP, для CRMP 0.3e', 'http://mc.hostinpl.ru/no.png', '0', 0, 9),
-(2, 'http://mc.hostinpl.ru/mods/justrp.tar', 'Just RP', 1, 'justrp.tar', 'Игровой мод Just RP, для CRMP 0.3e', 'http://mc.hostinpl.ru/no.png', '0', 0, 10),
-(2, 'http://mc.hostinpl.ru/mods/rayonrp.tar', 'Rayon RP', 1, 'rayonrp.tar', 'Игровой мод Rayon RP, для CRMP 0.3e и CRMP 0.3.7', 'http://mc.hostinpl.ru/no.png', '10', 1, 11),
-(2, 'http://mc.hostinpl.ru/mods/severerp.tar', 'Severe RP', 1, 'severerp.tar', 'Игровой мод Severe RP, для CRMP 0.3e и CRMP 0.3.7', 'http://mc.hostinpl.ru/no.png', '0', 0, 12);
+(1, 'https://code.flowaxy.com/hostpanel/mods/arizona.tar', 'Arizona RP', 1, 'arizona.tar', 'Игровой мод Arizona RP, для SAMP 0.3.7', 'https://code.flowaxy.com/hostpanel/no.png', '0', 0, 1),
+(1, 'https://code.flowaxy.com/hostpanel/mods/diamond-rp.tar', 'Diamond RP', 1, 'diamond-rp.tar', 'Игровой мод Diamond RP, для SAMP 0.3.7', 'https://code.flowaxy.com/hostpanel/no.png', '0', 0, 2),
+(1, 'https://code.flowaxy.com/hostpanel/mods/evolverp.tar', 'Evolve RP', 1, 'evolverp.tar', 'Игровой мод Evolve RP, для SAMP 0.3.7', 'https://code.flowaxy.com/hostpanel/no.png', '0', 0, 3),
+(1, 'https://code.flowaxy.com/hostpanel/mods/heavilyrp.tar', 'Heavily RP', 1, 'heavilyrp.tar', 'Игровой мод Heavily RP, для SAMP 0.3.7', 'https://code.flowaxy.com/hostpanel/no.png', '0', 0, 4),
+(1, 'https://code.flowaxy.com/hostpanel/mods/samp-mobile.tar', 'SAMP MOBILE', 1, 'samp-mobile.tar', 'Игровой мод SAMP MOBILE, для SAMP 0.3.7', 'https://code.flowaxy.com/hostpanel/no.png', '0', 0, 5),
+(1, 'https://code.flowaxy.com/hostpanel/mods/samprp.tar', 'Samp RP', 1, 'samprp.tar', 'Игровой мод Samp RP, для SAMP 0.3.7', 'https://code.flowaxy.com/hostpanel/no.png', '0', 0, 6),
+(2, 'https://code.flowaxy.com/hostpanel/mods/capsrp.tar', 'Caps RP', 1, 'capsrp.tar', 'Игровой мод Caps RP, для CRMP 0.3e и CRMP 0.3.7', 'https://code.flowaxy.com/hostpanel/no.png', '0', 0, 7),
+(2, 'https://code.flowaxy.com/hostpanel/mods/countyrp.tar', 'County RP', 1, 'countyrp.tar', 'Игровой мод County RP, для CRMP 0.3e', 'https://code.flowaxy.com/hostpanel/no.png', '0', 0, 9),
+(2, 'https://code.flowaxy.com/hostpanel/mods/justrp.tar', 'Just RP', 1, 'justrp.tar', 'Игровой мод Just RP, для CRMP 0.3e', 'https://code.flowaxy.com/hostpanel/no.png', '0', 0, 10),
+(2, 'https://code.flowaxy.com/hostpanel/mods/rayonrp.tar', 'Rayon RP', 1, 'rayonrp.tar', 'Игровой мод Rayon RP, для CRMP 0.3e и CRMP 0.3.7', 'https://code.flowaxy.com/hostpanel/no.png', '10', 1, 11),
+(2, 'https://code.flowaxy.com/hostpanel/mods/severerp.tar', 'Severe RP', 1, 'severerp.tar', 'Игровой мод Severe RP, для CRMP 0.3e и CRMP 0.3.7', 'https://code.flowaxy.com/hostpanel/no.png', '0', 0, 12);
 
 -- --------------------------------------------------------
 
