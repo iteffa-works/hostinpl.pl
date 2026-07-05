@@ -32,6 +32,26 @@ Custom PHP MVC hosting panel — **not** Laravel/Symfony.
 ## Rules
 
 - Minimal diffs; legacy PHP style
+- **New or modified PHP files:** use FLOWAXY file header (not legacy 2020 HOSTINPL block) — see below
 - No Composer for core; Registry pattern
 - Never commit `config.php` or payment secrets
 - Branding: flowaxy.com / GitHub — not hostinpl.ru
+
+## File header (new / modified PHP)
+
+```php
+/**
+ * Dovhopol Mykola Ivanovich (iTeffa)
+ * Telegram: https://t.me/iteffa
+ * Phone: +380966349498
+ * Email: flowaxy.dev@gmail.com
+ * Website: https://flowaxy.com/
+ *
+ * Описание файла
+ *
+ * Created: YYYY-MM-DD
+ * Modified: YYYY-MM-DD
+ *
+ * © 2026 Flowaxy Digital Studio. All rights reserved.
+ */
+```
