@@ -1,4 +1,18 @@
 <?php
+/**
+ * Dovhopol Mykola Ivanovich (iTeffa)
+ * Telegram: https://t.me/iteffa
+ * Phone: +380966349498
+ * Email: flowaxy.dev@gmail.com
+ * Website: https://flowaxy.com/
+ *
+ * CLI bootstrap cron-задач и плагинов.
+ *
+ * Created: 2020
+ * Modified: 2026-07-06
+ *
+ * © 2026 Flowaxy Digital Studio. All rights reserved.
+ */
 mb_internal_encoding("UTF-8");
 date_default_timezone_set("Europe/Moscow");
 set_time_limit(0);
@@ -24,6 +38,12 @@ require_once(ENGINE_DIR . 'main/response.php');
 require_once(ENGINE_DIR . 'main/db.php');
 require_once(ENGINE_DIR . 'main/load.php');
 require_once(ENGINE_DIR . 'main/action.php');
+require_once(ENGINE_DIR . 'main/hook.php');
+require_once(ENGINE_DIR . 'main/filter.php');
+require_once(ENGINE_DIR . 'main/plugin.php');
+require_once(ENGINE_DIR . 'main/plugin_router.php');
+
+define('PLUGINS_DIR', dirname(__FILE__) . '/plugins/');
 
 $registry = new Registry();
 
@@ -44,6 +64,10 @@ $registry->load = $load;
 
 $action = new Action($registry);
 $registry->action = $action;
+
+Plugin::initialize();
+do_action('hostin_bootstrap', $registry);
+do_action('hostin_cron_' . preg_replace('/[^\\w\\d]/', '', $argv[1]), $registry);
 
 $action->make('main/cron/' . $argv[1]);
 $response->output($action->go());

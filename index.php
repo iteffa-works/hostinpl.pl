@@ -1,8 +1,18 @@
 <?php
-/*
-Copyright (c) 2020 HOSTINPL (HOSTING-RUS) https://vk.com/hosting_rus
-Developed by Samir Shelenko and Alexander Zemlyanoy  (https://vk.com/id00v / https://vk.com/mrsasha082)
-*/
+/**
+ * Dovhopol Mykola Ivanovich (iTeffa)
+ * Telegram: https://t.me/iteffa
+ * Phone: +380966349498
+ * Email: flowaxy.dev@gmail.com
+ * Website: https://flowaxy.com/
+ *
+ * HTTP bootstrap панели и инициализация плагинов.
+ *
+ * Created: 2020
+ * Modified: 2026-07-06
+ *
+ * © 2026 Flowaxy Digital Studio. All rights reserved.
+ */
 mb_internal_encoding("UTF-8");
 header("Content-Type: text/html; charset=utf-8");
 date_default_timezone_set("Europe/Moscow");
@@ -26,6 +36,12 @@ require_once(ENGINE_DIR . 'main/user.php');
 require_once(ENGINE_DIR . 'main/load.php');
 require_once(ENGINE_DIR . 'main/action.php');
 require_once(ENGINE_DIR . 'main/cookie.php');
+require_once(ENGINE_DIR . 'main/hook.php');
+require_once(ENGINE_DIR . 'main/filter.php');
+require_once(ENGINE_DIR . 'main/plugin.php');
+require_once(ENGINE_DIR . 'main/plugin_router.php');
+
+define('PLUGINS_DIR', dirname(__FILE__) . '/plugins/');
 
 $registry = new Registry();
 
@@ -61,10 +77,15 @@ $registry->load = $load;
 
 $action = new Action($registry);
 $registry->action = $action;
+
+Plugin::initialize();
+
 $actionString = parse_url($request->server["REQUEST_URI"], PHP_URL_PATH);
 if ($actionString == '/') {
 	$actionString = '';
 }
+
+do_action('hostin_bootstrap', $registry);
 
 if(!empty($actionString)) {
 	$action->make($actionString);
