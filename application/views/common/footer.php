@@ -63,3 +63,4 @@ Developed by Samir Shelenko and Alexander Zemlyanoy  (https://vk.com/id00v / htt
 		});
 	}
 </script>
+<?php echo apply_filters('hostin.footer.content', ''); ?>

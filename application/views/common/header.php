@@ -17,6 +17,7 @@ Developed by Samir Shelenko and Alexander Zemlyanoy  (https://vk.com/id00v / htt
 		<link href="/assets/css/prismjs.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<link rel="shortcut icon" href="/favicon.ico" />
+		<?php echo apply_filters('hostin.head.content', ''); ?>
 	</head>
 	<body id="kt_body" class="header-static header-mobile-fixed page-loading">
 		<div id="kt_header_mobile" class="header-mobile header-mobile-fixed">
