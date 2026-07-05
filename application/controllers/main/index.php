@@ -1,8 +1,18 @@
 <?php
-/*
-Copyright (c) 2020 HOSTINPL (HOSTING-RUS) https://vk.com/hosting_rus
-Developed by Samir Shelenko (https://vk.com/id00v)
-*/
+/**
+ * Dovhopol Mykola Ivanovich (iTeffa)
+ * Telegram: https://t.me/iteffa
+ * Phone: +380966349498
+ * Email: flowaxy.dev@gmail.com
+ * Website: https://flowaxy.com/
+ *
+ * Главная страница; guest view через filter hostin.main.guest_view.
+ *
+ * Created: 2020
+ * Modified: 2026-07-06
+ *
+ * © 2026 Flowaxy Digital Studio. All rights reserved.
+ */
 class indexController extends Controller {
 	private $limit = 5;
 	public function index($page = 1) {
@@ -14,7 +24,8 @@ class indexController extends Controller {
 			$this->data['title'] = $this->config->title;
 			$this->data['description'] = $this->config->description;
 			$this->data['logo'] = $this->config->logo;
-			return $this->load->view('main/landing', $this->data);
+			$view = apply_filters('hostin.main.guest_view', 'main/landing');
+			return $this->load->view($view, $this->data);
 		}
 		if($this->user->getAccessLevel() < 0) {
 			$this->session->data['error'] = "У вас нет доступа к данному разделу!";
