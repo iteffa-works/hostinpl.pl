@@ -1,8 +1,18 @@
 <?php
-/*
-Copyright (c) 2020 HOSTINPL (HOSTING-RUS) https://vk.com/hosting_rus
-Developed by Samir Shelenko and Alexander Zemlyanoy  (https://vk.com/id00v / https://vk.com/mrsasha082)
-*/
+/**
+ * Dovhopol Mykola Ivanovich (iTeffa)
+ * Telegram: https://t.me/iteffa
+ * Phone: +380966349498
+ * Email: flowaxy.dev@gmail.com
+ * Website: https://flowaxy.com/
+ *
+ * Загрузка view-шаблонов с поддержкой hooks/filters плагинов.
+ *
+ * Created: 2020
+ * Modified: 2026-07-06
+ *
+ * © 2026 Flowaxy Digital Studio. All rights reserved.
+ */
 class Load {
 	private $registry;
 
@@ -11,7 +21,8 @@ class Load {
 	}
 	
 	public function view($name, $vars = array()){
-		$file = APPLICATION_DIR . 'views/' . $name . '.php';
+		$file = apply_filters('hostin.view.path', APPLICATION_DIR . 'views/' . $name . '.php', $name);
+		$vars = apply_filters('hostin.view.data', $vars, $name);
 		if(is_readable($file)){
 			extract($vars);
 			
