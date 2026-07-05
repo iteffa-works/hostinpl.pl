@@ -119,8 +119,10 @@ install_panel_from_repo()
 		exit 1
 	fi
 	configure_panel_config
+	mkdir -p /var/www/plugins
 	chown -R www-data:www-data /var/www
 	chmod -R 770 /var/www
+	chmod -R 775 /var/www/plugins
 }
 
 import_panel_database()
