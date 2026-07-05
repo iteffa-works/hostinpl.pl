@@ -21,6 +21,7 @@ Official documentation for **HOSTINPL 5.6** — maintained by [FLOWAXY DIGITAL S
 | [Cron jobs](cron.md) | Scheduled tasks |
 | [Security](security.md) | Hardening and secrets |
 | [Development](development.md) | Contributors and local dev |
+| [Plugins](plugins.md) | Plugin API and lifecycle |
 
 ## Project meta
 

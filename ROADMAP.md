@@ -17,6 +17,7 @@ HOSTINPL remains a **free, open-source product**.
 | Installer stability | Done | Config sed, cron fixes, error handling, config.example.php |
 | PHP 8.3+ compatibility audit | Planned | Test panel on PHP 8.3/8.4 beyond Debian 13 |
 | Security review | Planned | Session, payment callbacks, file uploads |
+| Plugin system (hooks, filters, admin UI) | Done | `/admin/plugins`, `/admin/plugin/{id}/...`, reference `site-landing` |
 | GitHub community files | Done | CONTRIBUTING, SECURITY, issue templates, FUNDING |
 
 ---

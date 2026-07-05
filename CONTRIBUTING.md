@@ -23,9 +23,10 @@ cp application/config.example.php application/config.php
 1. Fork the repository
 2. Create a branch: `feature/short-description` or `fix/short-description`
 3. Keep changes focused and match existing PHP style
-4. Update [CHANGELOG.md](CHANGELOG.md) for user-visible changes
-5. Update `.docs/` if install flow, config, or architecture changes
-6. Open a PR with a clear description
+4. Use the FLOWAXY file header in **new or modified** PHP files (see `.cursor/rules/hostinpl-core.mdc`)
+5. Update [CHANGELOG.md](CHANGELOG.md) for user-visible changes
+6. Update `.docs/` if install flow, config, or architecture changes
+7. Open a PR with a clear description
 
 ## PR checklist
 

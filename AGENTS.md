@@ -45,6 +45,8 @@ engine/engine_ftp/               # elFinder FTP UI
 application/controllers/result/  # Payment webhooks
 hostinpl5_6.sql                  # DB schema (database: hostin)
 install/install56_deb.sh         # Production installer
+plugins/                         # Optional plugins (application/includes/plugins.php)
+engine/main/plugin.php           # Plugin loader, hooks, filters
 ```
 
 ## Deploy URLs
@@ -66,7 +68,8 @@ install/install56_deb.sh         # Production installer
 ## Coding rules
 
 1. **Minimal diffs** — match existing PHP style
-2. **Registry pattern** — `$this->registry`, no DI container
+2. **New or modified PHP files** — FLOWAXY header (not legacy 2020 HOSTINPL block); see `.cursor/rules/hostinpl-core.mdc`
+3. **Registry pattern** — `$this->registry`, no DI container
 3. **No Composer** for core logic
 4. **Russian UI** in views unless i18n task
 5. Update `CHANGELOG.md` + `.docs/` for user-visible changes

@@ -21,6 +21,9 @@ Format based on [Keep a Changelog](https://keepachangelog.com/).
 - Screenshots gallery (renamed: `panel-dashboard.jpg`, etc.)
 - Default administrator in `hostinpl5_6.sql` (`flowaxy.dev@gmail.com`, level 3)
 - Public landing page placeholder at `/` for guests
+- Plugin system: hooks/filters, lifecycle (`install` / `activate` / `disable` / `uninstall`), admin `/admin/plugins`, plugin routes `/admin/plugin/{id}/...`
+- Reference plugin `site-landing` (guest landing + settings page)
+- `.docs/plugins.md` — plugin development guide
 
 ### Changed
 
