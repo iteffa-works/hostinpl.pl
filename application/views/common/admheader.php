@@ -17,6 +17,7 @@ Developed by Samir Shelenko and Alexander Zemlyanoy  (https://vk.com/id00v / htt
 		<link href="/assets/css/prismjs.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<link rel="shortcut icon" href="/favicon.ico" />
+		<?php echo apply_filters('hostin.head.content', ''); ?>
 	</head>
 	<body id="kt_body" class="header-static header-mobile-fixed page-loading">
 		<div id="kt_header_mobile" class="header-mobile header-mobile-fixed">
@@ -265,6 +266,11 @@ Developed by Samir Shelenko and Alexander Zemlyanoy  (https://vk.com/id00v / htt
 			<li class="nav-item mb-2" data-toggle="tooltip" title="Настройки" data-placement="right">
 				<a class="btn btn-sm btn-icon btn-bg-light btn-icon-primary btn-hover-primary" href="/admin/settings">
 				<i class="fas fa-cog icon-lg"></i>
+				</a>
+			</li>
+			<li class="nav-item mb-2" data-toggle="tooltip" title="Плагины" data-placement="right">
+				<a class="btn btn-sm btn-icon btn-bg-light btn-icon-primary btn-hover-primary" href="/admin/plugins">
+				<i class="fas fa-puzzle-piece icon-lg"></i>
 				</a>
 			</li>
 			<?php endif; ?>
@@ -787,6 +793,12 @@ Developed by Samir Shelenko and Alexander Zemlyanoy  (https://vk.com/id00v / htt
 								<a href="/admin/settings" class="menu-link">
 								<i class="menu-icon fa fa-cog"></i>
 								<span class="menu-text">Настройки</span>
+								</a>
+							</li>
+							<li class="menu-item menu-item<?php if($activesection == "admin/plugins" && $activeitem == "index"): ?>-active<?php endif; ?>" aria-haspopup="true">
+								<a href="/admin/plugins" class="menu-link">
+								<i class="menu-icon fa fa-puzzle-piece"></i>
+								<span class="menu-text">Плагины</span>
 								</a>
 							</li>
 							<?php endif; ?>
