@@ -22,5 +22,8 @@ desktop.ini
 # Logs
 *.log
 
+# Plugin runtime state
+plugins/*/settings.json
+
 # Local PHP overrides (OSPanel)
 .user.ini
